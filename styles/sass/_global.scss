@@ -1,0 +1,59 @@
+// Fonts
+@mixin nunitoFont(){
+    font-family: 'Nunito', sans-serif;
+}
+
+// General selectors
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;    
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    @include nunitoFont();
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    @include nunitoFont();
+    text-decoration: none;
+    border: 3px transparent solid; 
+    display: block;
+}
+
+button:hover, input:hover, input:focus {
+    border: 3px white solid; 
+    color: white;
+}
+
+.button:focus {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
